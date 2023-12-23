@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashant Sakre</title>
+
+  <link href="./starAnimation.css" rel="stylesheet">
+  </link>
+  <link href="./style.css" rel="stylesheet">
+  </link>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="bg-animation">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+  </div>
+
+  <!-- <div id="root">
+
+    <h2>Welocme to my site</h2>
+    <h1>Hello there! 👋  My name Prashat Sakre</h1>
+
+    <div class="introduction">
+      <p>I am a Software Developer, Developing the user interface web appliction. I'm pasionate about creating the clean, resposive and user-friendly website.</p>
+      <p>I have working experince in developing both Frontend and Backend. Using RectJs as Frontend framework and Nodjs as the Backend. Also interested in woking in up-coming new technologies like BunJs for JavaScript runtime evnironment and Svelte as frontend framework.</p>
+    </div>
+
+    <div id="skills">
+      <h1><a href="#skills">Skills</a></h1>
+      <p><strong>Primary skills: </strong> JavaScript, ReactJS, HTML, CSS</p>
+      <p><strong>Known libraries: </strong> JQuery, ReactJs, Redux, MaterialUI, JQuery, Fusion Chart, ExpressJs, Svelte</p>
+      <p><strong>CICD tools: </strong> Husky, Github actions</p>
+      <p><strong>Others: </strong> AWS, Github, Python, Flask, Nodejs </p>
+    </div>
+
+    <div id="projects">
+      <h1><a href="#projects">Projects</a></h1>
+      <div class="align-line">
+        <p><strong>Propel(x): </strong></p>
+        <p><strong>May 2023 - Present</strong></p>
+      </div>
+      <ul>
+        <li>Propel(x) is a premier alternative Investments and Syndicates platform.</li>
+        <li>Involved in the development of UI designs in WordPress, ruby on rails Haml templates and Javascript
+          functionalities such as confetti. Also integrated ActiveCampaign UI forms in WordPress.</li>
+      </ul>
+      <p><strong>Inventsuits: </strong></p>
+      <ul>
+        <li>Application suite for creation and management of E-commerce stores.</li>
+        <li>Implemented the admin and customer portal using ReactJS and NextJS respectively.</li>
+        <li>Implemented the image crop feature and integrated charts using react-chartjs-2 library.</li>
+      </ul>
+    </div>
+
+  </div> -->
+
+  <div id="root">
+    <div id="root-container">
+
+      <header>
+        <div class="logo">
+          <h1 style="cursor: pointer;" onclick="handleTabClick('welcome')">
+            Prashat Sakre
+          </h1>
+        </div>
+        <div class="social-links">
+          <a href="mailto:sakre.prashant@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+            </svg>
+          </a>
+          <a href="https://github.com/PrashantSakre">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+            </svg>
+          </a>
+        </div>
+      </header>
+      <div class="main-contaienr">
+        <div class="content">
+          <div id="welcome" class="section-container section-active">
+            <!-- <svg id="welcome_svg" xmlns="http://www.w3.org/2000/svg" width="605.44" height="122.24" viewBox="0 0 1892 382" data-inlinesvg=".inlineSvgFile-5"><path id="welcome_path" style="stroke-dasharray: 9541.88px, 9541.88px; stroke-dashoffset: 7156px; transition: fill 1s ease-in-out 0s; stroke: rgb(204, 204, 204); fill: rgb(204, 204, 204);" stroke="none" stroke-miterlimit="10" stroke-width="2" d="M673 52h13v286h-13V52ZM21 68h15l11.67 35 25.66 76 31.33 92L121 319c1.18-7.67 5.08-16.57 7.66-24l14.65-42 44.36-127 15.75-45c3.77-10.08 3.22-12.74 9.6-12.98 10.02-.39 8.61 1.39 13.32 14.98l15.33 44 40.99 117L309 319c1.13-7.32 8.11-26.23 10.95-34l14-41 10.74-32 29.98-87 14.66-43c4.29-12.86 3.55-13.88 10.67-14h8l-13.69 40-38.65 113-27.33 80L316 338h-7c-8.14-.05-7.4-.24-12.33-15l-15.34-44-39.99-114L214 87c-1.18 7.63-4.52 14.73-7 22l-15 43-30.31 87-15.27 44-12.75 37c-1.05 3.14-4.63 14.5-6.51 16.4-1.95 1.98-9.36 2.07-11.94 1.31-3.99-1.18-6.58-12.8-7.89-16.71l-16.66-49L21 68Zm570 230c2.38 2.41 7.16 6.17 5.83 10-.99 2.86-6.43 7.08-8.83 9.13-8.01 6.86-18.98 13.19-29 16.54-31.99 10.67-70.69 6.18-98-14.15-17.58-13.08-30.45-33.18-35.5-54.52-3.02-12.77-2.65-24.03-2.5-37 .31-26.02 14.43-53.95 34-70.7 29.18-24.98 77.82-27.22 110-6.76 15.48 9.85 25.23 22.2 33.24 38.46 8.78 17.81 9.76 31.68 9.76 51H457l-22 1 3.5 22c2.11 8.93 6.03 17.29 10.94 25 22.1 34.72 69.57 48.39 107.56 33.54 20.65-8.08 22.5-15.31 34-23.54Zm320-1c12.51 5.34 10.73 10.47 1.91 18.57-8.18 7.52-16.65 12.67-26.91 16.83-27.39 11.09-63.18 8.47-89-5.71-56.7-31.15-64.76-116.41-20.96-161.69 16.95-17.52 41.58-27.96 65.96-28h13c17.15.2 38.68 7.29 52 18.09 3.48 2.82 13.82 11.03 13.1 15.87-.31 2.1-2.54 3.96-4.12 5.19-1.79 1.39-2.96 1.94-4.98 2.85-16.12-22.52-41.49-30.31-68-30-13.46.16-31.78 6.35-43 13.7-48.27 31.58-51.35 106.37-9 144.13 32.26 28.76 94.69 27.83 120-9.83Zm130-159.58c31.95-3.9 65.11 6.25 86.83 30.58 14.22 15.93 24.14 40.56 24.17 62v17c-.32 26.84-16.35 57.76-38 73.41-21.5 15.54-41.23 18.89-67 18.59-7.87-.1-18.5-2.52-26-5-31.73-10.49-54.2-35.62-62.1-68-3.13-12.81-3.05-22.06-2.9-35 .18-14.98 5.27-32.93 12.51-46 12.61-22.75 33.41-38.61 58.49-45.25l14-2.33ZM1229 184c2.81-11.94 13.43-23.44 23-30.63 20.75-15.58 38.22-16.66 63-16.37 10.93.13 25.57 4.26 35 9.75 11.55 6.71 21.12 16.99 26.56 29.25l5.44 14c3.84-16.33 17.18-31.14 31-39.95 20.33-12.95 36.95-13.32 60-13.05 21.62.26 42.69 11.59 55.22 29 14.93 20.75 13.78 43.98 13.78 68v104h-13V215c-.03-18.87-8.14-40.46-23-52.53-21.85-17.76-59.06-17.22-83-3.96-7.55 4.19-14.03 9.9-19.56 16.49-19.32 23.02-18.44 47.97-18.44 76v87h-13V221c-.03-17.84-4.92-39.43-17.32-52.83-19.51-21.09-55.03-24.08-80.68-13.72-11.39 4.6-21.2 12.02-28.91 21.55-18.09 22.38-17.09 46.16-17.09 73v89h-13V138h13v29l1 17Zm542 114c2.39 2.42 7.16 6.17 5.83 10-.91 2.65-6.56 7.66-8.83 9.56-8.97 7.53-18.99 12.76-30 16.58-30.89 10.72-70.81 4.63-97-14.9-48.89-36.45-51.28-121.31-5-160.94 14.53-12.44 35.76-21.21 55-21.3h13c8.96.11 17.63 2.32 26 5.31 23.27 8.31 40.35 24.18 50.69 46.69 7.74 16.84 10.31 32.6 10.31 51h-175c.03 34.99 20.14 67.24 53 80.55 13.99 5.67 25.24 6.47 40 6.45 15.51-.02 33.42-5.67 46-14.78l16-14.22Zm7-69c-.24-26.58-16.1-55.62-39-69.24-24.94-14.85-59.06-14.85-84 0-18.23 10.85-30.98 29.82-36.11 50.24l-2.89 19h162Zm-1180 0c-2.27-28.02-15.25-54.79-40-69.55-29.57-17.64-72.11-13.53-96.96 10.64-15.37 14.94-24.57 37.54-25.04 58.91h162Zm445-79.7c-32.04 5.95-54.87 20.41-67.55 51.7-4.06 10.03-6.4 24.18-6.45 35-.18 39.89 18.04 74.6 58 86.98 5.76 1.78 15.05 3.95 21 4.02 18.01.21 32.87-1.63 49-10.51 49.02-27.01 55.84-102.96 18.71-142.4-18.76-19.93-46.02-27.44-72.71-24.79Zm799 165.55c4.74-1.3 9.69-1.39 13.67 1.95 7.18 6.01 5.14 18.08-3.67 21.46-14.63 5.61-25.63-14.82-10-23.41Z"></path></svg> -->
+            <h1 style="font-size: 50px; margin-bottom: 1rem;">Hey Hi 👋! </h1>
+            <p style="margin-bottom: 1rem;">I am a Software Developer based Bengaluru, India. I've been developing the user interface web
+              appliction over the years. I'm pasionate about creating the clean, resposive and user-friendly website.</p>
+            <p>    I've working experince of more then 2 years in developing both Frontend and Backend. Using RectJs as Frontend framework and
+              Nodjs as in Backend. Also interested in working up-coming new technologies like BunJs for JavaScript
+              runtime evnironment and Svelte as frontend framework.</p>
+          </div>
+          <div id="experience" class="section-container">
+            <h2>Experience</h2>
+            <div class="details">
+              <div class="card" data-open-modal-gloify>
+                <div class="date">
+                  <p>2021 - Present</p>
+                </div>
+                <div>
+                  <h3>Gloify</h3>
+                  <h4>Frontend Developer</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat ultricies augue, eget sollicitudin nulla consequat sed. Nulla scelerisque neque non nunc finibus vestibulum. Nulla porta iaculis elit, ac posuere odio imperdiet ac. Sed fermentum tellus nisl. Donec mattis a neque eu condimentum.</p>
+                  <div class="tags">
+                    <ul class="tags-ul">
+                      <li class="tags-li">
+                        <div>JavaScript</div>
+                      </li>
+                      <li class="tags-li">
+                        <div>HTML</div>
+                      </li>
+                      <li class="tags-li">
+                        <div>CSS</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="skills" class="section-container">
+            <h2>Skills</h2>
+            <div class="details">
+              <div>
+                <h3>Known languages</h3>
+                <div class="tags">
+                  <ul class="tags-ul">
+                    <li class="tags-li">
+                      <div>JavaScript</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>Python</div>
+                    </li>
+                  </ul>
+                </div>
+                <h3>Libraries</h3>
+                <div class="tags">
+                  <ul class="tags-ul">
+                    <li class="tags-li">
+                      <div>Boostrap</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>JQuery</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>ReactJS</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>Redux</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>ExpressJs</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>Flask</div>
+                    </li>
+                  </ul>
+                </div>
+                <h3>UI Libraries</h3>
+                <div class="tags">
+                  <ul class="tags-ul">
+                    <li class="tags-li">
+                      <div>MaterialUI</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>Ant Designs</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>Fusion charts</div>
+                    </li>
+                  </ul>
+                </div>
+                <h3>Tools</h3>
+                <div class="tags">
+                  <ul class="tags-ul">
+                    <li class="tags-li">
+                      <div>Github</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>Husky</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>AWS</div>
+                    </li>
+                    <li class="tags-li">
+                      <div>CICD</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="projects" class="section-container">
+            <h2>Projects</h2>
+            <div class="details">
+              <div class="card2">
+                <div class="date">
+                  <p>Auther, Sept 2021</p>
+                </div>
+                <div>
+                  <h3>Easy MQL Web Tool</h3>
+                  <p>Easy MQL is an easy-to-use SQL like query language for MongoDB developed using pyparsing. I contributed in developing grammars and test cases for some of the language constructs. And developed Query composer for writing and running Easy MQL queries for MongoDB. Frontend is developed using vanilla JS, HTML, CSS and backend using Flask (Python). Watch demo.</p>
+                  <div class="tags">
+                    <ul class="tags-ul">
+                      <li class="tags-li">
+                        <div>Python</div>
+                      </li>
+                      <li class="tags-li">
+                        <div>Flask</div>
+                      </li>
+                      <li class="tags-li">
+                        <div>JavaScript</div>
+                      </li>
+                      <li class="tags-li">
+                        <div>HTML</div>
+                      </li>
+                      <li class="tags-li">
+                        <div>CSS</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="section-links">
+          <!-- <h1>section-links</h1> -->
+          <div id="tab-links" class="list">
+            <ul>
+              <li class="tab-links" onclick="handleTabClick('experience')">Experience</li>
+              <li class="tab-links" onclick="handleTabClick('skills')">Skills</li>
+              <li class="tab-links" onclick="handleTabClick('projects')">Projects</li>
+            </ul>
+          </div>
+          <div class="game-buton">
+            <img class="open-game" src="./assets/icons8-ps-controller-50.png" alt="game-icon" data-open-modal-game>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="overlay" data-overlay data-close-overlay-gloify></div>
+      <div class="modal" data-modal-gloify>
+        <div class="close-modal-button" data-close-modal-gloify>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+        </div>
+        <div class="details">
+          <div class="card2">
+            <div class="date">
+              <p>May 2023 - Present</p>
+            </div>
+            <div>
+              <h2><a href="https://www.propelx.com" target="_blank" rel="noopener">Propel(x)</a></h2>
+              <p>Propel(x) is a premier alternative Investments and Syndicates platform.
+                Involved in the development of UI designs in WordPress, ruby on rails Haml templates and Javascript
+                functionalities such as confetti. Also integrated ActiveCampaign UI forms in WordPress.</p>
+              <div class="tags">
+                <ul class="tags-ul">
+                  <li class="tags-li">
+                    <div>WordPress</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>Ruby on rails</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>JavaScript</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>HTML</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>CSS</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="date">
+              <p>Jan 2023 - Apr 2023</p>
+            </div>
+            <div>
+              <h2>Inventsuite</h2>
+              <p>Application suite for creation and management of E-commerce stores.
+                 Implemented the admin and customer portal using ReactJS and NextJS respectively.
+                 Implemented the image crop feature and integrated charts using react-chartjs-2 library.</p>
+              <div class="tags">
+                <ul class="tags-ul">
+                  <li class="tags-li">
+                    <div>ReactJS</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>MaterialUI</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>react-chartjs-2</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>JavaScript</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="date">
+              <p>Sep 2022 - Dec 2022</p>
+            </div>
+            <div>
+              <h2><a href="https://www.mythiksha.com/" target="_blank" rel="noopener">Mythiksha</a></h2>
+              <p>It is a job hiring platform which includes candidate, recruiter and course management.
+                Completely developed the UI for Admin and Recruiter sites from ground up using React and Redux. Used both
+                Material UI and Ant Design Themes.
+                Integrated tools like ESLint and Prettier for maintaining good code quality. Also, automated them using Husky.
+                Configured and deployed the frontend React bundle on AWS S3 bucket.</p>
+              <div class="tags">
+                <ul class="tags-ul">
+                  <li class="tags-li">
+                    <div>ReactJS</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>Redux</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>MaterialUI</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>AntDesign</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>JavaScript</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="date">
+              <p>Mar 2022 - Aug 2022</p>
+            </div>
+            <div>
+              <h2><a href="https://oaklanecapital.com/" target="_blank" ref="noopener">Oakalane</a></h2>
+              <p>A cloud-based financial capital management system. Contributed to UI using React and Redux.
+                 Implemented the graphs, tables and Heat Map using Fusion Chart, Ant design library and React respectively.
+                 Completely implemented the UI for Discounted Cash Flow (DCF) feature involving calculations at front end.
+                 Contributed to other UI features like the overview of a company, financials stats, competitors and ownership</p>
+              <div class="tags">
+                <ul class="tags-ul">
+                  <li class="tags-li">
+                    <div>ReactJS</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>Redux</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>AntDesign</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>Fusion Charts</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="date">
+              <p>Aug 2021 - Feb 2022</p>
+            </div>
+            <div>
+              <h2><a href="https://web.arrivae.com/" target="_blank" rel="noopener">Arrivae</a></h2>
+              <p>Contributed to the development of UI using Angular, HTML, CSS and jQuery for Arrivae Home page.
+                Involved in development and integration of admin application written using React and Material UI theme.</p>
+              <div class="tags">
+                <ul class="tags-ul">
+                  <li class="tags-li">
+                    <div>Angular</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>JavaScript</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>HTML</div>
+                  </li>
+                  <li class="tags-li">
+                    <div>CSS</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- <button id="startGameBtn">start</button> -->
+  </div>
+
+  <div data-overlay-game class="overlay-game"></div>
+  <div data-modal-game class="modal-game">
+    <div data-close-modal-game class="close-modal-button-game">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+      </svg>
+    </div>
+    <div>
+      <div class="game-describe">
+        <h1>Space Wars</h1>
+        <p data-js="typing">A long time ago in a far far away Galaxy, the serenity of our beloved Earth 🌍 is on the extraterrestrial 👾 invaders loom ominously. To advance this impending cosmic attack, the leader of the Earth decree the creation of a elite and unprecedented task force: S.P.D. (Space Petrol Delta). And amidst the chosen warriors of this celestial battalion, you stand appointed, entrusted with a singular mission - to halt the relentless invasion and restore the coveted peace of our dear Earth. The fate of our world now rests in your valiant hands. May you emerge triumphant and bring an end to the Interstellar menace that threatens our very existence. The saga unfolds, and the destiny of Earth awaits your heroic intervention 🌌🚀🌏 </p>
+      </div>
+      <div class="keybinds-container">
+        <div class="keybinds">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M18 9v4H6V9H4v6h16V9z"/></svg>
+          <p>- > Shoot Laser</p>
+        </div>
+        <div class="keybinds">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg>
+          <p>- > Move Right and Left / Use Mouse</p>
+        </div>
+      </div>
+      <!-- <div>
+        <p>Note: This game is Completely developed in Venily JavaScript. All my devleopment journey is documented here./p>
+      </div> -->
+    </div>     
+  </div>
+
+  <!-- Game  -->
+
+  <div id="root-game">
+    <div class="title">
+      <h1>SPACE WARS</h1>
+    </div>
+    <div class="start-button">
+      <button class="" >Start</button>
+    </div>
+
+    <div id="game_stats">
+      <h1 id="score">0</h1>
+      <button class="icon-button" id="game-info-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+        </svg>
+      </button>
+      <button class="icon-button" id="close-game-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-escape" viewBox="0 0 16 16">
+          <path d="M8.538 1.02a.5.5 0 1 0-.076.998 6 6 0 1 1-6.445 6.444.5.5 0 0 0-.997.076A7 7 0 1 0 8.538 1.02Z"/>
+          <path d="M7.096 7.828a.5.5 0 0 0 .707-.707L2.707 2.025h2.768a.5.5 0 1 0 0-1H1.5a.5.5 0 0 0-.5.5V5.5a.5.5 0 0 0 1 0V2.732z"/>
+        </svg>
+      </button>
+    </div>
+    <canvas id="game-canvs"></canvas>
+  </div>
+
+
+  <script type="module" src="./Game/init.js"></script>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
