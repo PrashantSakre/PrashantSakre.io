@@ -605,6 +605,10 @@ header {
     height: unset;
   }
 
+  .main-contaienr .game-buton {
+    display: none;
+  }
+
   .section-links {
     width: 100%;
     align-items: end;
