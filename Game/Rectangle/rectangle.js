@@ -2,7 +2,7 @@ import canvas from "../Canvas/Canvas.js";
 
 export default class rectangle {
 
-  constructor(width = 10, height = 10, color) {
+  constructor(width, height, color) {
     this.canvas = canvas
     this.width = width
     this.height = height

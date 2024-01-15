@@ -54,8 +54,8 @@ export default class EnemyShip {
     if(this.#STEP > 0) {
       this.move_left();
     }
-    if(this.#STEP == 100) this.#STEP = -100
-    if(this.#ANIMATION_EXPRESSION == 20) this.#ANIMATION_EXPRESSION = -20
+    if(this.#STEP === 100) this.#STEP = -100
+    if(this.#ANIMATION_EXPRESSION === 20) this.#ANIMATION_EXPRESSION = -20
   }
 
   // #fire_laser() {

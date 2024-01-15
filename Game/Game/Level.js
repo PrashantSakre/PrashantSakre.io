@@ -9,9 +9,9 @@ export default class Level {
   }
 
   draw() {
-    this.level1_Enemies.forEach(ene => {
+    for (const ene of this.level1_Enemies) {
       ene.draw();
-    })
+    }
 
     if(this.level1_Enemies.length === 0 ) {
       this.generateEnemies()

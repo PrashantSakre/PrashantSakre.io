@@ -1,4 +1,4 @@
-window.onload = function(e) {
+window.onload = (e) => {
   const root = document.getElementById('root');
   const rootContainer = document.getElementById('root-container');
   const game = document.getElementById('game-canvs');
@@ -12,21 +12,21 @@ window.onload = function(e) {
   const overlay = document.querySelector("[data-overlay]")
   
   if (openModalGloify) {
-    openModalGloify.addEventListener("click", function() {
+    openModalGloify.addEventListener("click", () => {
       modalGloify.classList.add("open")
       overlay.classList.add("open")
     })
   }
   
   if(closeModalGloify) {
-    closeModalGloify.addEventListener("click", function() {
+    closeModalGloify.addEventListener("click", () => {
       modalGloify.classList.remove("open")
       overlay.classList.remove("open")
     })
   }
 
   if(closeOverlayGloify) {
-    closeOverlayGloify.addEventListener("click", function() {
+    closeOverlayGloify.addEventListener("click", () => {
       modalGloify.classList.remove("open")
       overlay.classList.remove("open")
     })

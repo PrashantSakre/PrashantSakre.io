@@ -20,11 +20,10 @@ export default class Game {
     const playerLasers = this.player_ship.get_lasers();
     const Enemies = this.level.get_enemies();
     
-    playerLasers.forEach(fired_laser => {
-      
+    for (const fired_laser of playerLasers) {
       const laser = fired_laser.getLaserPosition()
       
-      this.level.get_enemies().forEach(enemy => {
+      for (const enemy of this.level.get_enemies()) {
         const Ene = enemy.get_corner_coordinates();
 
         if(this.#find_collision_with_bullet(Ene[3].x, Ene[3].y, Ene[1].x, Ene[1].y, laser.x, laser.y)) {
@@ -34,8 +33,8 @@ export default class Game {
           this.player_ship.set_lasers(playerLasers)
           this.scoreText.setScore(this.scoreText.getScore() + 1)
         }
-      })
-    })
+      }
+    }
   } 
 
   // #checkEnemyLaserCollisionWithPlayer() {

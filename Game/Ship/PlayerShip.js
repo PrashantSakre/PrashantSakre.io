@@ -91,14 +91,13 @@ export default class PlayerShip {
   }
 
   #draw_fired_lasers() {
-    this.lasers_fired.forEach(laser => {
-
+    for (const laser of this.lasers_fired) {
       // Remove lasers which are off the canvas otherwise array is filled with laser objects
       if(laser.getLaserPosition().y < 0) {
         this.lasers_fired.splice(this.lasers_fired.indexOf(laser), 1)
       }
       laser.draw()
-    });
+    }
   }
 
   #isShipCanMoveRight() {

@@ -1,3 +1,0 @@
-function EnemyShip(params) {
-  
-}

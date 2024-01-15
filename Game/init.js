@@ -1,5 +1,3 @@
-"use strict";
-
 import canvas from "./Canvas/Canvas.js";
 import Game from "./Game/Game.js";
 
