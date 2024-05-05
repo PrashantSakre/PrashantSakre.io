@@ -26,10 +26,10 @@ export default class DrawEnemyShip {
   animate_expression(steps) {
     if(steps <= -15) {
       this.getEnemyLayer('enemyLayer3');
-    } 
+    }
     if(steps <= 0 && steps > -15) {
       this.getEnemyLayer('enemyLayer2');
-    } 
+    }
     if(steps > 0 && steps <= 30) {
       this.getEnemyLayer('enemyLayer1');
     }
@@ -42,29 +42,29 @@ export default class DrawEnemyShip {
         this.l1.draw(this.positionX + 20, this.positionY)
 
         this.l2.draw(this.positionX + 10, this.positionY + 4)
-    
+
         this.l20.draw(this.positionX, this.positionY + 8)
         this.blackRect.draw(this.positionX + 20, this.positionY + 8)
         this.l20.draw(this.positionX + 25, this.positionY + 8)
         this.blackRect.draw(this.positionX + 45, this.positionY + 8)
         this.l20.draw(this.positionX + 50, this.positionY + 8)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 12)
-    
+
         this.l30.draw(this.positionX, this.positionY + 16)
         this.blackRect.draw(this.positionX + 30, this.positionY + 16)
         this.blackRect.draw(this.positionX + 35, this.positionY + 16)
         this.l30.draw(this.positionX + 40, this.positionY + 16)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 20)
-    
+
         this.l15.draw(this.positionX +5, this.positionY + 24)
         this.l10.draw(this.positionX +30, this.positionY + 24)
         this.l15.draw(this.positionX +50, this.positionY + 24)
-    
+
         this.l10.draw(this.positionX +2, this.positionY + 28)
         this.l10.draw(this.positionX +58, this.positionY + 28)
-    
+
         this.l5.draw(this.positionX + 10, this.positionY + 32)
         this.l5.draw(this.positionX + 54, this.positionY + 32)
         break;
@@ -72,29 +72,29 @@ export default class DrawEnemyShip {
         this.l1.draw(this.positionX + 20, this.positionY)
 
         this.l2.draw(this.positionX + 10, this.positionY + 4)
-    
+
         this.l20.draw(this.positionX, this.positionY + 8)
         this.blackRect.draw(this.positionX + 20, this.positionY + 8)
         this.l20.draw(this.positionX + 25, this.positionY + 8)
         this.blackRect.draw(this.positionX + 45, this.positionY + 8)
         this.l20.draw(this.positionX + 50, this.positionY + 8)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 12)
-    
+
         this.l30.draw(this.positionX, this.positionY + 16)
         this.blackRect.draw(this.positionX + 30, this.positionY + 16)
         this.blackRect.draw(this.positionX + 35, this.positionY + 16)
         this.l30.draw(this.positionX + 40, this.positionY + 16)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 20)
-    
+
         this.l15.draw(this.positionX +5, this.positionY + 24)
         this.l10.draw(this.positionX +30, this.positionY + 24)
         this.l15.draw(this.positionX +50, this.positionY + 24)
-    
+
         this.l10.draw(this.positionX +2, this.positionY + 28)
         this.l10.draw(this.positionX +58, this.positionY + 28)
-    
+
         this.l5.draw(this.positionX , this.positionY + 32)
         this.l5.draw(this.positionX + 64, this.positionY + 32)
         break;
@@ -102,25 +102,25 @@ export default class DrawEnemyShip {
         this.l1.draw(this.positionX + 20, this.positionY)
 
         this.l2.draw(this.positionX + 10, this.positionY + 4)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 8)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 12)
-    
+
         this.l30.draw(this.positionX, this.positionY + 16)
         this.blackRect.draw(this.positionX + 30, this.positionY + 16)
         this.blackRect.draw(this.positionX + 35, this.positionY + 16)
         this.l30.draw(this.positionX + 40, this.positionY + 16)
-    
+
         this.logRect.draw(this.positionX, this.positionY + 20)
-    
+
         this.l15.draw(this.positionX +5, this.positionY + 24)
         this.l10.draw(this.positionX +30, this.positionY + 24)
         this.l15.draw(this.positionX +50, this.positionY + 24)
-    
+
         this.l10.draw(this.positionX +2, this.positionY + 28)
         this.l10.draw(this.positionX +58, this.positionY + 28)
-    
+
         this.l5.draw(this.positionX , this.positionY + 32)
         this.l5.draw(this.positionX + 64, this.positionY + 32)
         break;
@@ -130,18 +130,4 @@ export default class DrawEnemyShip {
     }
   }
 
-} 
-
-// function getColor() {
-//   switch (type) {
-//     case 'player':
-//       'green'
-//       break;
-//     case 'enemy':
-//       'red'
-//       break;
-  
-//     default:
-//       break;
-//   }
-// }
+}

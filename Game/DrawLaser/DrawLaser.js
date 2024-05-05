@@ -2,22 +2,31 @@ import rectangle from "../Rectangle/rectangle.js";
 
 export default class DrawLaser {
   #SPEED = 5;
-  constructor(positionX, positionY) {
+  constructor(positionX, positionY, direction, color) {
     this.positionX = positionX;
     this.positionY = positionY;
-    this.laser = new rectangle(5, 15, 'red');
+    this.laser = new rectangle(5, 15, color);
+    this.direction = direction;
   }
 
   draw() {
     this.laser.draw(this.positionX, this.positionY);
-    this.#moveLaserUp();
+    if (this.direction === "up") {
+      this.#moveLaserUp();
+    } else if (this.direction === "down") {
+      this.#moveLaserDown();
+    }
   }
 
   getLaserPosition() {
-    return {x: this.positionX, y: this.positionY}
+    return { x: this.positionX, y: this.positionY }
   }
 
   #moveLaserUp() {
     this.positionY -= this.#SPEED;
+  }
+
+  #moveLaserDown() {
+    this.positionY += this.#SPEED;
   }
 }

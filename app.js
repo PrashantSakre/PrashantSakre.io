@@ -10,14 +10,14 @@ window.onload = (e) => {
   const closeOverlayGloify = document.querySelector('[data-close-overlay-gloify]')
   const modalGloify = document.querySelector("[data-modal-gloify]")
   const overlay = document.querySelector("[data-overlay]")
-  
+
   if (openModalGloify) {
     openModalGloify.addEventListener("click", () => {
       modalGloify.classList.add("open")
       overlay.classList.add("open")
     })
   }
-  
+
   if(closeModalGloify) {
     closeModalGloify.addEventListener("click", () => {
       modalGloify.classList.remove("open")
@@ -70,53 +70,6 @@ window.onload = (e) => {
     modalGame.classList.remove('close')
     overlayGame.classList.remove('close')
   })
-
-  // const TYPING_SPEED = 50;
-  // let $targetList;
-
-  // const init = () => {
-  //   $targetList = document.querySelectorAll('[data-js="typing"]');
-  //   setup();
-  //   run();
-  // }
-
-  // const setup = () => {
-  //   for (const $dom of $targetList) {
-  //     const textList = $dom.innerText.split('');
-  //     let   html     = '';
-  //     for (const char of textList) {
-  //       html += `<span class="type-text">${char}</span>`;
-  //     }
-  //     $dom.innerHTML = html;
-  //   }
-  // }
-
-  // const run = () => {
-  //   let delay = 0;
-  //   for (let i = 0; i < $targetList.length; i++) {
-  //     const $target = $targetList[i];
-  //     const $chars  = $target.querySelectorAll('span');
-
-  //     for (let l = 0; l < $chars.length; l++) {
-  //       const $char = $chars[l];
-  //       const text  = $char.textContent;
-
-  //       delay += TYPING_SPEED;
-  //       if (text === ' ') delay += TYPING_SPEED * 2;
-
-  //       const animate = () => {
-  //         $char.style.display = 'inline-block';
-  //       }
-
-  //       setTimeout(animate,delay);
-
-  //       if ($chars.length - 1 <= l) {
-  //         delay += TYPING_SPEED * 4;
-  //         setTimeout(() => $target.style.display = 'block',delay);
-  //       }
-  //     }
-  //   }
-  // }
 
 }
 
