@@ -1,6 +1,6 @@
 body {
     background-color: #0d1117;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -71,7 +71,6 @@ canvas {
     transition: all 0.2s linear;
     transform: scale(1.1);
 }
-
 
 /* Modal game */
 .close-modal-button-game {
@@ -146,18 +145,18 @@ canvas {
 .overlay-game.open {
     display: block;
     transform: scaleY(0) scaleX(0.01);
-    animation: unfoldInOverlay 0.2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation: unfoldInOverlay 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .modal-game.open {
     display: block;
     transform: scaleY(0) scaleX(0.01);
-    animation: unfoldIn 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation: unfoldIn 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .modal-game.close {
     transform: scale(1);
-    animation: unfoldOut 0.7s 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation: unfoldOut 0.7s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 @keyframes unfoldInOverlay {
@@ -205,9 +204,6 @@ canvas {
     }
 }
 
-
-
-
 /* strong {
   color: #33ff00;
 } */
@@ -233,7 +229,7 @@ a {
     height: 100vh;
     width: 100%;
     display: flex;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     visibility: visible;
 }
 
@@ -298,7 +294,7 @@ header {
 .list ul li {
     font-size: xx-large;
     padding-bottom: 20px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     padding: 4px 0;
     width: fit-content;
 }
@@ -318,13 +314,13 @@ header {
     transform-origin: 100%;
     opacity: 0;
     width: 100%;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     position: absolute;
     top: 0;
     left: 0;
     transform: scaleX(0);
     height: 470px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .content .section-active {
@@ -346,7 +342,7 @@ header {
     display: flex;
     /* border-left: 1px solid #fff; */
     padding: 1rem;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     border-radius: 10px;
 }
 
@@ -369,7 +365,7 @@ header {
     display: flex;
     /* border-left: 1px solid #fff; */
     padding: 1rem;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     border-radius: 10px;
 }
 
@@ -482,7 +478,6 @@ header {
     background-color: rgba(49, 49, 49, 0.5);
 }
 
-
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
@@ -514,12 +509,12 @@ header {
     width: 100%;
     visibility: hidden;
     align-items: center;
-    font-family: 'Press Start 2P';
+    font-family: "Press Start 2P";
 }
 
 #root-game .title {
     margin-top: 10%;
-    font-family: 'Press Start 2P';
+    font-family: "Press Start 2P";
     font-size: 30px;
     text-align: center;
     animation-name: example;
@@ -612,7 +607,6 @@ header {
     opacity: 1;
   }
 } */
-
 
 /* // Small devices (landscape phones, 576px and up) */
 /* @media (max-width: 576px) { ... } */
