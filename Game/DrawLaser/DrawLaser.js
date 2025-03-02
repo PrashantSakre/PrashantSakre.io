@@ -1,4 +1,5 @@
 import rectangle from "../Rectangle/rectangle.js";
+import { speedFactor } from "../SpeedFactor/SpeedFactor.js";
 
 export default class DrawLaser {
   #SPEED = 5;
@@ -19,14 +20,14 @@ export default class DrawLaser {
   }
 
   getLaserPosition() {
-    return { x: this.positionX, y: this.positionY }
+    return { x: this.positionX, y: this.positionY };
   }
 
   #moveLaserUp() {
-    this.positionY -= this.#SPEED;
+    this.positionY -= this.#SPEED * speedFactor.getSpeedFactor();
   }
 
   #moveLaserDown() {
-    this.positionY += this.#SPEED;
+    this.positionY += this.#SPEED * speedFactor.getSpeedFactor();
   }
 }

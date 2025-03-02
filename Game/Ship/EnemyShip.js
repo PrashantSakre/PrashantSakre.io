@@ -1,8 +1,9 @@
 import DrawEnemyShip from "../DrawShip/DrawEnemyShip.js";
+import Expression from "../Expression/Expression.js";
 import { ShipMotion } from "../ShipMotion/ShipMotion.js";
 
 export default class EnemyShip {
-  ANIMATION_EXPRESSION = -20;
+  #expression = new Expression();
 
   constructor(positionX, positionY, color) {
     this.shipMotion = new ShipMotion(positionX, positionY, color, "horizontal");
@@ -13,10 +14,9 @@ export default class EnemyShip {
 
   draw() {
     const ship = new DrawEnemyShip(this.positionX, this.positionY, this.color);
-    ship.draw(this.ANIMATION_EXPRESSION);
+    ship.draw(this.#expression.get_expresion());
     this.ship_motion_draw();
-
-    this.expression_move();
+    this.#expression.run();
   }
 
   ship_motion_draw() {
@@ -30,12 +30,7 @@ export default class EnemyShip {
       { x: this.positionX, y: this.positionY },
       { x: this.positionX + 70, y: this.positionY },
       { x: this.positionX + 70, y: this.positionY + 36 },
-      { x: this.positionX, y: this.positionY + 36 }
-    ]
-  }
-
-  expression_move() {
-    this.ANIMATION_EXPRESSION++;
-    if (this.ANIMATION_EXPRESSION === 20) this.ANIMATION_EXPRESSION = -20
+      { x: this.positionX, y: this.positionY + 36 },
+    ];
   }
 }
